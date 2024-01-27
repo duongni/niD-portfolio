@@ -2,21 +2,29 @@ import React from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-  const line = {
-    border: "2px solid #FBFBFA",
-    margin: "0 0 17 0",
-  };
   return (
-    <div className="flex flex-row gap-[32px] text-base font-light text-gray-20 tracking-wide">
-      <div className="flex flex-row gap-[32px] text-base font-light text-gray-20 tracking-wide">
-        <Link href="/" className="hover:text-black hover:font-normal">
-          Portfolio
-        </Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/experience">Experience</Link>
-        <Link href="/contacts">Contact</Link>
+    <div className="flex flex-col">
+      <div className="nested-links">
+        <div className="flex flex-row md:gap-[36px] gap-[12px] text-base font-light text-gray-20 tracking-wide">
+          <div className="flex flex-col nested-links">
+            <Link href="/">Portfolio</Link>
+            <hr className="relative flex w-[69px] h-[2px] mt-[17px] bg-gray-20 border-0 hover:cursor-pointer" />
+          </div>
+          <div className="flex flex-col nested-links">
+            <Link href="/projects">Projects</Link>
+            <hr className="relative flex w-[69px] h-[2px] mt-[17px] bg-gray-20 border-0 hover:cursor-pointer" />
+          </div>
+          <div className="flex flex-col nested-links">
+            <Link href="/experience">Experience</Link>
+            <hr className="relative flex w-[90px] h-[2px] mt-[17px] bg-gray-20 border-0 hover:cursor-pointer" />
+          </div>
+          <div className="flex flex-col nested-links">
+            <Link href="/contacts">Contact</Link>
+            <hr className="relative flex w-[66px] h-[2px] mt-[17px] bg-gray-20 border-0 hover:cursor-pointer" />
+          </div>
+        </div>
       </div>
-      <hr style={line} />
+      <hr className=" flex h-[2px] -mt-[2px] mb-[17px] bg-gray-20 border-0 dark:bg-gray-700" />
     </div>
   );
 };
