@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 const Header = () => {
   return (
-    <div className="bg-gray-0 border-gray-10 md:p-[17px] p-[2px] rounded-[10px] mb-[30px] ">
+    <div className="bg-gray-0 border-gray-10 md:p-[17px] p-[2px] rounded-[10px] my-[30px] ">
       <div className="flex flex-row justify-between">
         <div className="flex ">
           <Image
@@ -23,7 +23,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-[9px] justify-end">
+        <div className="hidden sm:flex gap-[9px] justify-end">
           <Link
             className="border border-gray-10 rounded-[5px] bg-white md:w-[40px] w-[30px] w:h-[40px] h-[30px] flex justify-center items-center"
             href="https://github.com/duongni"
