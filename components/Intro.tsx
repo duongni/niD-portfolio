@@ -26,7 +26,7 @@ const Intro = () => {
         animate={mainControl}
         transition={{
           duration: 0.5,
-          delay: 0.3,
+          delay: 0.1,
         }}
       >
         <Image
@@ -36,24 +36,67 @@ const Intro = () => {
           alt="Ni Profile Picture"
           className="rounded-full mx-auto md:mt-[250px] my-[150px]"
         />
-        <div className="h-[200px] w-[2px] bg-gray-20 opacity-25 rounded-full mx-auto mb-[100px]"></div>
+      </motion.div>
 
-        <h1 className="font-bold text-black backdrop:leading-6 tracking-wide text-6xl  text-center">
-          <div className="text-black leading-6 tracking-wide md:text-base text-sm text-center">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75, scale: 0 },
+          visible: { opacity: 1, y: 0, scale: 1 },
+        }}
+        initial="hidden"
+        animate={mainControl}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+      >
+        <h1 className="font-bold text-black backdrop:leading-6 tracking-wide text-6xl  text-center mb-[48px]">
+          <div className="text-black leading-6 tracking-wide md:text-base text-sm text-center mb-[24px]">
             Hello, I'm
           </div>{" "}
           Ni Duong
         </h1>
-        <div className="h-[200px] w-[2px] bg-gray-20 opacity-25 rounded-full mx-auto my-[100px]"></div>
-        <p className="font-normal text-black leading-6 tracking-wide md:text-base text-sm mb-[48px] text-center">
+      </motion.div>
+
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75, scale: 0 },
+          visible: { opacity: 1, y: 0, scale: 1 },
+        }}
+        initial="hidden"
+        animate={mainControl}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+      >
+        {" "}
+        <p className="font-semibold text-black leading-6 tracking-wide md:text-base text-sm mb-[48px] text-center">
           a former Industrial Designer turned Front-end Developer.
         </p>
-        <div className="h-[200px] w-[2px] bg-gray-20 opacity-25 rounded-full mx-auto my-[100px]"></div>
-        <p className="font-normal text-black leading-6 tracking-wide md:text-base text-sm text-center">
+      </motion.div>
+
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75, scale: 0 },
+          visible: { opacity: 1, y: 0, scale: 1 },
+        }}
+        initial="hidden"
+        animate={mainControl}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+      >
+        {" "}
+        <p className="font-normal text-gray-20 leading-6 tracking-wide md:text-base text-sm text-center">
           After 9 years of designing accessories and products, I stumbled upon a
           coding platform called SheCodes and got hooked from the first week of
-          class. My favorite part of coding is problem-solving—the feeling of
-          solving a puzzle is incredibly satisfying.
+          class. My favorite part of coding is{" "}
+          <span className="font-semibold text-black">
+            problem-solving—the feeling of solving a puzzle is incredibly
+            satisfying.
+          </span>
         </p>
       </motion.div>
     </div>

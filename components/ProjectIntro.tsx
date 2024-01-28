@@ -31,7 +31,7 @@ const ProjectIntro = () => {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <div ref={ref} className="grid grid-cols-1 ">
+    <div ref={ref} className="grid grid-cols-1 sm:p-0 p-2">
       <motion.div
         style={{
           scale: scaleProgress,
