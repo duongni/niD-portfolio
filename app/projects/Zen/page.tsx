@@ -16,20 +16,20 @@ const Zen = () => {
 
   return (
     <div ref={ref}>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75, scale: 0 },
-          visible: { opacity: 1, y: 0, scale: 1 },
-        }}
-        initial="hidden"
-        animate={mainControl}
-        transition={{
-          duration: 0.4,
-          delay: 0.1,
-        }}
-      >
-        <div className="mx-auto md:max-w-[600px] ">
-          <div className="md:my-[100px] my-[30px]">
+      <div className="mx-auto sm:max-w-[600px] ">
+        <div className="sm:my-[100px] my-[30px]">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75, scale: 0 },
+              visible: { opacity: 1, y: 0, scale: 1 },
+            }}
+            initial="hidden"
+            animate={mainControl}
+            transition={{
+              duration: 0.4,
+              delay: 0.1,
+            }}
+          >
             <h1 className="text-left text-xl font-medium leading-6">Zen</h1>
             <p className="font-normal text-gray-20 tracking-wide md:text-base text-sm mt-[40px]">
               The main goal of the Zen website is to provide users with a serene
@@ -40,8 +40,20 @@ const Zen = () => {
               nature and embark on outdoor adventures with a sense of
               tranquility and ease.
             </p>
-
-            <div className="flex md:flex-row flex-col my-[40px]">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75, scale: 0 },
+              visible: { opacity: 1, y: 0, scale: 1 },
+            }}
+            initial="hidden"
+            animate={mainControl}
+            transition={{
+              duration: 0.4,
+              delay: 0.1,
+            }}
+          >
+            <div className="flex sm:flex-row flex-col my-[40px]">
               <Image
                 src="/ZEN-1.png"
                 aria-hidden="true"
@@ -68,7 +80,21 @@ const Zen = () => {
                 </div>
               </div>
             </div>
-            <div className="grid  grid-cols-2 mx-auto gap-6">
+          </motion.div>
+
+          <div className="grid  grid-cols-2 mx-auto gap-6">
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75, scale: 0 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+              initial="hidden"
+              animate={mainControl}
+              transition={{
+                duration: 0.4,
+                delay: 0.1,
+              }}
+            >
               <Image
                 src="/park-1.png"
                 alt="Park Card Image sample 1"
@@ -83,6 +109,19 @@ const Zen = () => {
                 height={300}
                 className="flex rounded-3xl my-[10px]  hover:scale-105 hover:ease-in-out hover:duration-500"
               />
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75, scale: 0 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+              initial="hidden"
+              animate={mainControl}
+              transition={{
+                duration: 0.4,
+                delay: 0.1,
+              }}
+            >
               <Image
                 src="/park-3.png"
                 alt="Park Card Image sample 3"
@@ -97,10 +136,10 @@ const Zen = () => {
                 height={300}
                 className="flex rounded-3xl my-[10px] hover:scale-105 hover:ease-in-out hover:duration-500"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </motion.div>{" "}
+      </div>
     </div>
   );
 };

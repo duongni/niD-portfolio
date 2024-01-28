@@ -6,3 +6,10 @@ export interface customButtonProps {
   containerStyles?: string;
   centeredIcon: React.ReactNode;
 }
+export interface ReusableImageProps {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className?: string;
+}
