@@ -64,7 +64,7 @@ const Zen = () => {
                 src="/promptopia-small.png"
                 aria-hidden="true"
                 height={400}
-                width={250}
+                width={200}
                 alt=""
                 className="-z-20 flex object-cover object-center w-[480px]  hover:scale-105 hover:ease-in-out hover:duration-500"
               />
@@ -88,7 +88,7 @@ const Zen = () => {
             </div>
           </motion.div>
 
-          <div className="grid  grid-cols-2 mx-auto gap-6">
+          <div className="sm:grid sm:grid-cols-2 flex flex-col justify-center items-center mx-auto gap-6">
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 75, scale: 0 },
