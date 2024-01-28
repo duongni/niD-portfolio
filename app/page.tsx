@@ -1,9 +1,13 @@
-import Portfolio from "@/components/Portfolio";
+import Experience from "@/components/Experience";
+import Intro from "@/components/Intro";
+import ProjectIntro from "@/components/ProjectIntro";
 
 export default function Home() {
   return (
     <main className="">
-      <Portfolio />
+      <Intro />
+      <ProjectIntro />
+      <Experience />
     </main>
   );
 }
