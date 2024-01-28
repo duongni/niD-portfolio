@@ -80,6 +80,7 @@ const Zen = () => {
                   <p className="bg-black px-2 py-1 rounded-full">
                     TAILWIND CSS
                   </p>
+                  <p className="bg-black px-2 py-1 rounded-full">RESTFUL API</p>
                   <p className="bg-black px-2 py-1 rounded-full">MONGODB</p>
                   <p className="bg-black px-2 py-1 rounded-full">HEADLESS UI</p>
                   <p className="bg-black px-2 py-1 rounded-full">NEXT AUTH</p>

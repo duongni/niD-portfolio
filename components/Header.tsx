@@ -67,7 +67,7 @@ const Header = () => {
             </Link>
             <Link
               className="border border-gray-10 rounded-[5px] bg-white md:w-[100px] w-[80px] w:h-[40px] h-[30px] flex gap-[7px] justify-center items-center"
-              href="https://www.linkedin.com/in/ni-duong/"
+              href="mailto:duongni2004@gmail.com"
             >
               <MdEmail size={17} />
               <span className="text-sm font-normal text-gray-20 tracking-wide">

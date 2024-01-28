@@ -129,6 +129,44 @@ const Zen = () => {
           </div>
         </div>
       </div>
+      <div className="sm:my-[100px] my-[30px]">
+        <h1 className="text-center text-xl font-medium leading-6">
+          Family Voyage
+        </h1>
+
+        <div className="flex sm:flex-row flex-col gap-[20px] my-[40px]">
+          <Image
+            src="/family-voyage-full-page.png"
+            aria-hidden="true"
+            height={400}
+            width={250}
+            alt=""
+            className="-z-20 flex object-cover object-center w-[480px]  hover:scale-105 hover:ease-in-out hover:duration-500"
+          />
+          <div className="flex flex-col justify-between gap-[20px] mb-[10px] items-end xs:items-center">
+            <MdArrowOutward
+              size={30}
+              className="flex relative hover:cursor-pointer mt-5"
+              onClick={() => {
+                router.push("/projects/FamilyVoyage");
+              }}
+            />
+            <div className="flex flex-col justify-end gap-[20px] mb-[10px] items-center">
+              <p className="font-normal text-gray-20 leading-6 tracking-wide  text-sm mt-[10px]">
+                I crafted the layout and coded the landing page from scratch,
+                ensuring a seamless and visually captivating user experience.
+              </p>
+              <div className="grid grid-cols-3 text-[10px] text-white gap-2 text-center">
+                <p className="bg-black px-2 py-1  rounded-full">REACT</p>
+                <p className="bg-black px-2 py-1 rounded-full">CSS</p>
+                <p className="bg-black px-2 py-1  rounded-full">HTML</p>
+                <p className="bg-black px-2 py-1 rounded-full">BOOTSTRAP</p>
+                <p className="bg-black px-2 py-1 rounded-full">FRONT-END</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
