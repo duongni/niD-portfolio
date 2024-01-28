@@ -49,7 +49,7 @@ const ProjectIntro = () => {
           My Projects
         </h3>
         <div className="flex flex-col md:max-w-[600px] mt-[30px]">
-          <Link href="/">
+          <Link href="/projects/Zen">
             <Image
               src="/zen-landing.png"
               width={600}
@@ -68,49 +68,55 @@ const ProjectIntro = () => {
         </div>
 
         <div className="flex flex-col max-w-[600px] mt-[30px]">
-          <Image
-            src="/promptopia.png"
-            width={600}
-            height={300}
-            alt="Promptopia landing page"
-            className="flex rounded-[5px] shadow-md object-fill hover:scale-105 hover:ease-in-out hover:duration-500"
-          />
-          <div className="flex flex-row justify-start gap-3 mt-[20px]">
-            <p className="flex text-sm font-normal">Promptopia</p>
-            <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide">
-              Web Development
-            </p>
-          </div>
+          <Link href="/projects/Promptopia">
+            <Image
+              src="/promptopia.png"
+              width={600}
+              height={300}
+              alt="Promptopia landing page"
+              className="flex rounded-[5px] shadow-md object-fill hover:scale-105 hover:ease-in-out hover:duration-500"
+            />
+            <div className="flex flex-row justify-start gap-3 mt-[20px]">
+              <p className="flex text-sm font-normal">Promptopia</p>
+              <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide">
+                Web Development
+              </p>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col max-w-[600px] mt-[30px]">
-          <Image
-            src="/past-works.png"
-            width={600}
-            height={300}
-            alt="Zen Website landing page"
-            className="flex rounded-[5px] shadow-md hover:scale-105 hover:ease-in-out hover:duration-500"
-          />
-          <div className="flex flex-row justify-start gap-3 mt-[20px]">
-            <p className="flex text-sm font-normal">Past Works</p>
-            <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide ">
-              Web Development
-            </p>
-          </div>
+          <Link href="/projects/IndustrialPortfolio">
+            <Image
+              src="/past-works.png"
+              width={600}
+              height={300}
+              alt="Zen Website landing page"
+              className="flex rounded-[5px] shadow-md hover:scale-105 hover:ease-in-out hover:duration-500"
+            />
+            <div className="flex flex-row justify-start gap-3 mt-[20px]">
+              <p className="flex text-sm font-normal">Past Works</p>
+              <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide ">
+                Web Development
+              </p>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col max-w-[600px] mt-[30px] mb-[200px]">
-          <Image
-            src="/family-voyage.png"
-            width={600}
-            height={300}
-            alt="Family Voyage landing page"
-            className="flex rounded-[5px] shadow-md hover:scale-105 hover:ease-in-out hover:duration-500"
-          />
-          <div className="flex flex-row justify-start gap-3 mt-[20px]">
-            <p className="flex text-sm font-normal">Family Voyage</p>
-            <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide">
-              Web Development
-            </p>
-          </div>
+          <Link href="/projects/FamilyVoyage">
+            <Image
+              src="/family-voyage.png"
+              width={600}
+              height={300}
+              alt="Family Voyage landing page"
+              className="flex rounded-[5px] shadow-md hover:scale-105 hover:ease-in-out hover:duration-500"
+            />
+            <div className="flex flex-row justify-start gap-3 mt-[20px]">
+              <p className="flex text-sm font-normal">Family Voyage</p>
+              <p className="flex text-sm font-normal text-gray-20 leading-6 tracking-wide">
+                Web Development
+              </p>
+            </div>
+          </Link>
         </div>
       </motion.div>
     </div>
