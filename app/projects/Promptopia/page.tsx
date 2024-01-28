@@ -37,16 +37,14 @@ const Zen = () => {
             }}
           >
             <h1 className="sm:text-left text-center text-xl font-medium leading-6">
-              Zen
+              Promptopia
             </h1>
             <p className="font-normal text-gray-20 tracking-wide md:text-base text-sm mt-[40px]">
-              The main goal of the Zen website is to provide users with a serene
-              and visually appealing platform for exploring National Parks and
-              campgrounds. It aims to offer a calming browsing experience,
-              facilitating easy navigation through park information and
-              campground details, ultimately encouraging users to connect with
-              nature and embark on outdoor adventures with a sense of
-              tranquility and ease.
+              It is where users can share and explore various prompts. Whether
+              you're searching for inspiration or eager to contribute your own,
+              our platform offers a dynamic space for creativity. With features
+              like prompt searching, user profiles, and prompt editing, there's
+              always something new to discover.
             </p>
           </motion.div>
           <motion.div
@@ -61,9 +59,9 @@ const Zen = () => {
               delay: 0.1,
             }}
           >
-            <div className="flex sm:flex-row flex-col my-[40px]">
+            <div className="flex sm:flex-row flex-col gap-[20px] my-[40px]">
               <Image
-                src="/ZEN-1.png"
+                src="/promptopia-small.png"
                 aria-hidden="true"
                 height={400}
                 width={250}
@@ -72,11 +70,12 @@ const Zen = () => {
               />
               <div className="flex flex-col justify-end gap-[20px] mb-[20px]">
                 <p className="font-normal text-gray-20 leading-6 tracking-wide  text-sm mt-[10px]">
-                  I designed and coded a user-friendly interface for a website
-                  aimed at inviting users to explore national parks and camps.
-                  The data is sourced from the National Park Service's API.
+                  Powered by Next.js 14, full-stack application leverages
+                  technologies like Tailwind CSS for styling, Next Auth for
+                  authentication, and MongoDB for database management.
                 </p>
                 <div className="grid grid-cols-3 text-[10px] text-white gap-2 text-center">
+                  <p className="bg-black px-2 py-1 rounded-full">FULL-STACK</p>
                   <p className="bg-black px-2 py-1 rounded-full">NEXT.JS</p>
                   <p className="bg-black px-2 py-1 rounded-full">
                     TAILWIND CSS
@@ -84,7 +83,6 @@ const Zen = () => {
                   <p className="bg-black px-2 py-1 rounded-full">MONGODB</p>
                   <p className="bg-black px-2 py-1 rounded-full">HEADLESS UI</p>
                   <p className="bg-black px-2 py-1 rounded-full">NEXT AUTH</p>
-                  <p className="bg-black px-2 py-1 rounded-full">TYPESCRIPT</p>
                 </div>
               </div>
             </div>
@@ -104,15 +102,8 @@ const Zen = () => {
               }}
             >
               <Image
-                src="/park-1.png"
-                alt="Park Card Image sample 1"
-                width={400}
-                height={300}
-                className="flex rounded-3xl my-[10px]  hover:scale-105 hover:ease-in-out hover:duration-500"
-              />
-              <Image
-                src="/park-2.png"
-                alt="Park Card Image sample 2"
+                src="/promptopia-edit-screen.png"
+                alt="Promptopia Prompt Edit"
                 width={400}
                 height={300}
                 className="flex rounded-3xl my-[10px]  hover:scale-105 hover:ease-in-out hover:duration-500"
@@ -131,15 +122,8 @@ const Zen = () => {
               }}
             >
               <Image
-                src="/park-3.png"
-                alt="Park Card Image sample 3"
-                width={400}
-                height={300}
-                className="flex rounded-3xl my-[10px] hover:scale-105 hover:ease-in-out hover:duration-500"
-              />
-              <Image
-                src="/park-4.png"
-                alt="Park Card Image sample 4"
+                src="/promptopia-profile.png"
+                alt="Promptopia Prompt Profile Page"
                 width={400}
                 height={300}
                 className="flex rounded-3xl my-[10px] hover:scale-105 hover:ease-in-out hover:duration-500"
@@ -150,10 +134,18 @@ const Zen = () => {
       </div>
       <div className="flex items-center justify-center my-[40px]">
         <Link
-          href="https://github.com/duongni/zent.git"
+          href="https://github.com/duongni/Promptopia.git"
           className="text-center bg-black rounded-full text-white text-xs px-3 py-2 hover:cursor-pointer hover:bg-white shadow-md hover:text-black"
         >
-          Zen Github
+          Promptopia Github
+        </Link>
+      </div>
+      <div className="flex items-center justify-center my-[40px]">
+        <Link
+          href="https://promptopia-one-delta.vercel.app/"
+          className="text-center bg-black rounded-full text-white text-xs px-3 py-2 hover:cursor-pointer hover:bg-white shadow-md hover:text-black"
+        >
+          Promptopia Web
         </Link>
       </div>
       <div className="flex flex-row gap-10 items-center justify-center opacity-70">
@@ -161,14 +153,14 @@ const Zen = () => {
           size={20}
           className="flex relative hover:cursor-pointer mt-5"
           onClick={() => {
-            router.push("/projects");
+            router.push("/projects/IndustrialPortfolio");
           }}
         />
         <IoArrowForwardOutline
           size={20}
           className="flex relative hover:cursor-pointer mt-5"
           onClick={() => {
-            router.push("/projects/IndustrialPortfolio");
+            router.push("/projects/FamilyVoyage");
           }}
         />
       </div>

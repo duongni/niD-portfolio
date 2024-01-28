@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
+
 import { useRouter } from "next/navigation";
 
 const Zen = () => {
@@ -44,6 +45,83 @@ const Zen = () => {
                 <p className="bg-black px-2 py-1 rounded-full">NEXT AUTH</p>
                 <p className="bg-black px-2 py-1 rounded-full">TYPESCRIPT</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="sm:my-[100px] my-[30px]">
+        <h1 className="xs:text-left text-center text-xl font-medium my-[40px]">
+          Industrial Product Designer{" "}
+          <span className="text-gray-20">Landing Page</span>
+        </h1>
+        <div className="flex flex-col">
+          <div className="flex sm:flex-row flex-col">
+            <div className="flex flex-col justify-between gap-[20px] mb-[10px] items-end xs:items-center">
+              <Image
+                src="/ni-full-web.png"
+                aria-hidden="true"
+                height={400}
+                width={300}
+                alt=""
+                className="-z-20 flex object-cover object-center mx-auto  hover:scale-105 hover:ease-in-out hover:duration-500"
+              />
+            </div>
+            <div className="flex flex-col justify-between gap-[20px] mb-[10px] items-end xs:items-center">
+              <MdArrowOutward
+                size={30}
+                className="flex relative hover:cursor-pointer mt-5"
+                onClick={() => {
+                  router.push("/projects/IndustrialPortfolio");
+                }}
+              />
+              <div className="flex flex-col justify-end gap-[20px] mb-[10px] items-center mx-2">
+                <p className="font-normal text-gray-20 leading-6 tracking-wide  text-sm mt-[10px]">
+                  Simple layout using flexbox and grid.
+                </p>
+                <div className="grid grid-cols-3 text-[10px] text-white gap-2 text-center">
+                  <p className="bg-black px-2 py-1  rounded-full">REACT</p>
+                  <p className="bg-black px-2 py-1 rounded-full">CSS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="sm:my-[100px] my-[30px]">
+        <h1 className="text-center text-xl font-medium leading-6">
+          Promptopia
+        </h1>
+        <p className="font-normal text-gray-20 tracking-wide md:text-base text-sm mt-[40px]">
+          It is where users can share and explore various prompts. Whether
+          you're searching for inspiration or eager to contribute your own, our
+          platform offers a dynamic space for creativity. With features like
+          prompt searching, user profiles, and prompt editing, there's always
+          something new to discover.
+        </p>
+
+        <div className="flex sm:flex-row flex-col gap-[20px] my-[40px]">
+          <Image
+            src="/promptopia-small.png"
+            aria-hidden="true"
+            height={400}
+            width={250}
+            alt=""
+            className="-z-20 flex object-cover object-center w-[480px]  hover:scale-105 hover:ease-in-out hover:duration-500"
+          />
+          <div className="flex flex-col justify-end gap-[20px] mb-[20px]">
+            <p className="font-normal text-gray-20 leading-6 tracking-wide  text-sm mt-[10px]">
+              Powered by Next.js 14, full-stack application leverages
+              technologies like Tailwind CSS for styling, Next Auth for
+              authentication, and MongoDB for database management.
+            </p>
+            <div className="grid grid-cols-3 text-[10px] text-white gap-2 text-center">
+              <p className="bg-black px-2 py-1 rounded-full">FULL-STACK</p>
+              <p className="bg-black px-2 py-1 rounded-full">NEXT.JS</p>
+              <p className="bg-black px-2 py-1 rounded-full">TAILWIND CSS</p>
+              <p className="bg-black px-2 py-1 rounded-full">MONGODB</p>
+              <p className="bg-black px-2 py-1 rounded-full">HEADLESS UI</p>
+              <p className="bg-black px-2 py-1 rounded-full">NEXT AUTH</p>
+              <p className="bg-black px-2 py-1 rounded-full">TYPESCRIPT</p>
             </div>
           </div>
         </div>
