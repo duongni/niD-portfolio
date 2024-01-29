@@ -159,7 +159,7 @@ const Zen = () => {
       </div>
       <div className="flex items-center justify-center my-[40px]">
         <Link
-          href="https://main--stellular-banoffee-b390f8.netlify.app/"
+          href="https://zen-duongnis-projects.vercel.app/"
           className="text-center bg-black rounded-full text-white text-xs px-3 py-2 hover:cursor-pointer hover:bg-white shadow-md hover:text-black"
         >
           Zen Web
