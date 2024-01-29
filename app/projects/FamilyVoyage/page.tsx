@@ -75,6 +75,7 @@ const Page = () => {
                   <p className="bg-black px-2 py-1  rounded-full">REACT</p>
                   <p className="bg-black px-2 py-1 rounded-full">CSS</p>
                   <p className="bg-black px-2 py-1  rounded-full">HTML</p>
+                  <p className="bg-black px-2 py-1 rounded-full">JAVASCRIPT</p>
                   <p className="bg-black px-2 py-1 rounded-full">BOOTSTRAP</p>
                   <p className="bg-black px-2 py-1 rounded-full">FRONT-END</p>
                 </div>

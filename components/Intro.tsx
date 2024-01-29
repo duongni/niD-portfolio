@@ -29,28 +29,7 @@ const Intro = () => {
           delay: 0.1,
         }}
       >
-        <Image
-          src="/ni-profile.png"
-          height={300}
-          width={300}
-          alt="Ni Profile Picture"
-          className="rounded-full mx-auto md:mt-[250px] my-[150px]"
-        />
-      </motion.div>
-
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75, scale: 0 },
-          visible: { opacity: 1, y: 0, scale: 1 },
-        }}
-        initial="hidden"
-        animate={mainControl}
-        transition={{
-          duration: 0.5,
-          delay: 0.1,
-        }}
-      >
-        <h1 className="font-bold text-black backdrop:leading-6 tracking-wide text-6xl  text-center mb-[48px]">
+        <h1 className="font-bold text-black backdrop:leading-6 tracking-wide text-6xl  text-center mt-[300px] mb-[48px]">
           <div className="text-black leading-6 tracking-wide md:text-base text-sm text-center mb-[24px]">
             Hello, I'm
           </div>{" "}

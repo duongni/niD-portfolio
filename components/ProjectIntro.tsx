@@ -45,9 +45,12 @@ const ProjectIntro = () => {
         animate={mainControl}
         className="wrapper"
       >
-        <h3 className="text-center text-xl font-medium my-[30px]">
+        <Link
+          href="/projects"
+          className="flex justify-center items-center text-xl font-medium my-[100px]"
+        >
           My Projects
-        </h3>
+        </Link>
         <div className="flex flex-col md:max-w-[600px] mt-[30px]">
           <Link href="/projects/Zen">
             <Image
