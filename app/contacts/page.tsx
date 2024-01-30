@@ -59,7 +59,7 @@ const Contact = () => {
               On the internet:{" "}
               <span className="">
                 <Link
-                  href="https://www.linkedin.com/in/ni-duong/"
+                  href="https://www.linkedin.com/in/developer-ni-duong/"
                   className="underline font-base hover:line-through"
                 >
                   linkedin

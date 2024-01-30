@@ -64,7 +64,7 @@ const Header = () => {
               </Link>
               <Link
                 className="border border-gray-10 rounded-[5px] bg-white md:w-[40px] w-[30px] w:h-[40px] h-[30px] flex justify-center items-center"
-                href="https://www.linkedin.com/in/ni-duong/"
+                href="https://www.linkedin.com/in/developer-ni-duong/"
               >
                 <TfiLinkedin size={17} />
               </Link>
